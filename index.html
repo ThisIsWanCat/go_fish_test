@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Fish Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-board">
+            <div class="player-section" id="player3-section">
+                <div id="player3-pairs" class="pairs"></div>
+                <div id="player3" class="player"></div>
+            </div>
+            <div class="player-section" id="player2-section">
+                <div id="player2-pairs" class="pairs"></div>
+                <div id="player2" class="player"></div>
+            </div>
+            <div id="game-log"></div>
+            <div class="player-section" id="player4-section">
+                <div id="player4" class="player"></div>
+                <div id="player4-pairs" class="pairs"></div>
+            </div>
+            <div id="deck">
+                <span id="deck-count"></span>
+            </div>
+            <div class="player-section" id="player1-section">
+                <div id="player1" class="player"></div>
+                <div id="player1-pairs" class="pairs"></div>
+            </div>
+            <div id="game-info">
+                <div id="turn-indicator">Current Turn: <span id="current-player"></span></div>
+                <button id="reset-game">Reset Game</button>
+                <button id="toggle-visibility">Toggle Other Players' Cards</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
